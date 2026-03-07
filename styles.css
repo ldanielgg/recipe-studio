@@ -34,7 +34,6 @@ body.recipe-details {
 }
 
 h1,
-h2,
 .recipe-story,
 .nav-container {
     font-family: 'Playfair Display', serif;
@@ -43,7 +42,15 @@ h2,
 
 h1 {
     font-size: 4rem;
-    margin: 40px 0 20px;
+    margin: 40px 0 0 0;
+    text-align: center;
+}
+
+.recipe-list-body h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -192,23 +199,27 @@ nav a.active {
 .recipe-card {
     flex: 0 0 250px;
     height: 350px;
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.card-inner {
+    height: 100%;
     border-radius: 20px;
     overflow: hidden;
     position: relative;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
     border: 2px solid #d4af37;
-    animation: fadeInUp 0.6s ease-out forwards;
 }
 
-.recipe-card img {
+.card-inner img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
 
-.recipe-card::after {
+.card-inner::after {
     content: '';
     position: absolute;
     inset: 0;
@@ -216,7 +227,7 @@ nav a.active {
     pointer-events: none;
 }
 
-.recipe-card .card-content {
+.card-inner .card-content {
     position: absolute;
     bottom: 20px;
     left: 20px;
@@ -225,7 +236,7 @@ nav a.active {
     color: white;
 }
 
-.recipe-card h3 {
+.card-inner h3 {
     margin: 0;
     font-size: 1.5rem;
     font-family: 'Inter', sans-serif;
@@ -233,7 +244,7 @@ nav a.active {
     line-height: 1.1;
 }
 
-.recipe-card:hover {
+.card-inner:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
@@ -296,7 +307,7 @@ nav a.active {
     padding: 20px;
     z-index: 3;
     transform: translateX(100%);
-    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: transform 0.6s ease;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -306,7 +317,7 @@ nav a.active {
     -webkit-backdrop-filter: blur(8px);
 }
 
-.recipe-card:hover .card-extra {
+.card-inner:hover .card-extra {
     transform: translateX(0);
 }
 
