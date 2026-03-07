@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Studio - Recipes</title>
+    <title>Recipe Atelier - Recipes</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
 </head>
 
 <body>
@@ -23,181 +24,244 @@
             </ul>
         </div>
     </nav>
-    <h1>Recipe List</h1>
-    <div class="filter-bar">
-        <div class="search">
-            <span class="search-icon material-symbols-outlined">search</span>
-            <input class="search-input" type="search" placeholder="Search recipes...">
+    <main class="recipe-list-body">
+        <header>
+            <h1>Recipe List</h1>
+            <h2>Discover delicious recipes</h2>
+            <div class="filter-bar">
+                <div class="search">
+                    <span class="search-icon material-symbols-outlined">search</span>
+                    <input class="search-input" type="search" placeholder="Search recipes...">
+                </div>
+            </div>
+        </header>
+        <section class="recipe-grid">
+            <article class="recipe-card">
+                <div class="card-inner">
+                    <img src="images/salmon-nigiri.jpeg" alt="Salmon Nigiri">
+                    <div class="card-content">
+                        <h3>Salmon Nigiri</h3>
+                    </div>
+                    <div class="card-extra">
+                        <h4>Details</h4>
+                        <p>• A masterclass in precision, featuring delicate slices of fresh salmon over seasoned
+                            vinegared rice.
+                        </p>
+                        <p>• 45 mins</p>
+                        <p>• Hard</p>
+                        <a href="recipes/salmon-nigiri.html" class="view-btn">View Recipe</a>
+                    </div>
+                </div>
+            </article>
+            <article class="recipe-card">
+                <div class="card-inner">
+                    <img src="images/caprese-flatbread.jpeg" alt="Caprese Flatbread">
+                    <div class="card-content">
+                        <h3>Caprese Flatbread</h3>
+                    </div>
+                    <div class="card-extra">
+                        <h4>Details</h4>
+                        <p>• A crisp flatbread topped with fresh mozzarella, heirloom tomatoes, and a sweet balsamic
+                            glaze.
+                        </p>
+                        <p>• 15 mins</p>
+                        <p>• Easy</p>
+                        <a href="recipes/caprese-flatbread.html" class="view-btn">View Recipe</a>
+                    </div>
+                </div>
+            </article>
+            <article class="recipe-card">
+                <div class="card-inner">
+                    <img src="images/spaghetti-carbonara.jpeg" alt="Spaghetti Carbonara">
+                    <div class="card-content">
+                        <h3>Spaghetti Carbonara</h3>
+                    </div>
+                    <div class="card-extra">
+                        <h4>Details</h4>
+                        <p>• A silky, Roman classic featuring eggs, hard cheese, and crispy guanciale for a rich and
+                            comforting pasta night.</p>
+                        <p>• 25 mins</p>
+                        <p>• Medium</p>
+                        <a href="recipes/spaghetti-carbonara.html" class="view-btn">View Recipe</a>
+                    </div>
+                </div>
+            </article>
+            <article class="recipe-card">
+                <div class="card-inner">
+                    <img src="images/beef-bourguignon.jpeg" alt="Beef Bourguignon">
+                    <div class="card-content">
+                        <h3>Beef Bourguignon</h3>
+                    </div>
+                    <div class="card-extra">
+                        <h4>Details</h4>
+                        <p>• A sophisticated, slow-cooked French stew with tender beef, red wine, and savory vegetables.
+                        </p>
+                        <p>• 3h 00m</p>
+                        <p>• Hard</p>
+                        <a href="recipes/beef-bourguignon.html" class="view-btn">View Recipe</a>
+                    </div>
+                </div>
+            </article>
+            <article class="recipe-card">
+                <div class="card-inner">
+                    <img src="images/street-style-tacos.jpeg" alt="Street Style Tacos">
+                    <div class="card-content">
+                        <h3>Street Style Tacos</h3>
+                    </div>
+                    <div class="card-extra">
+                        <h4>Details</h4>
+                        <p>• Vibrant and authentic, these bite-sized tacos pack a punch with bold seasonings and fresh
+                            toppings.
+                        </p>
+                        <p>• 30 mins</p>
+                        <p>• Medium</p>
+                        <a href="recipes/street-style-tacos.html" class="view-btn">View Recipe</a>
+                    </div>
+                </div>
+            </article>
+            <article class="recipe-card">
+                <div class="card-inner">
+                    <img src="images/quinoa-harvest-bowl.jpeg" alt="Quinoa Harvest Bowl">
+                    <div class="card-content">
+                        <h3>Quinoa Harvest Bowl</h3>
+                    </div>
+                    <div class="card-extra">
+                        <h4>Details</h4>
+                        <p>• A quick, nutrient-dense power lunch loaded with seasonal greens, grains, and a bright
+                            vinaigrette.
+                        </p>
+                        <p>• 15 mins</p>
+                        <p>• Easy</p>
+                        <a href="recipes/quinoa-harvest-bowl.html" class="view-btn">View Recipe</a>
+                    </div>
+                </div>
+            </article>
+            <article class="recipe-card">
+                <div class="card-inner">
+                    <img src="images/mushroom-risotto.jpeg" alt="Mushroom Risotto">
+                    <div class="card-content">
+                        <h3>Mushroom Risotto</h3>
+                    </div>
+                    <div class="card-extra">
+                        <h4>Details</h4>
+                        <p>• Creamy, decadent arborio rice slow-cooked with earthy wild mushrooms and finished with
+                            parmesan.
+                        </p>
+                        <p>• 40 mins</p>
+                        <p>• Hard</p>
+                        <a href="recipes/mushroom-risotto.html" class="view-btn">View Recipe</a>
+                    </div>
+                </div>
+            </article>
+            <article class="recipe-card">
+                <div class="card-inner">
+                    <img src="images/honey-garlic-shrimp.jpeg" alt="Honey Garlic Shrimp">
+                    <div class="card-content">
+                        <h3>Honey Garlic Shrimp</h3>
+                    </div>
+                    <div class="card-extra">
+                        <h4>Details</h4>
+                        <p>• Succulent shrimp tossed in a sweet and savory garlic glaze, served over fluffy jasmine
+                            rice.
+                        </p>
+                        <p>• 15 mins</p>
+                        <p>• Easy</p>
+                        <a href="recipes/honey-garlic-shrimp.html" class="view-btn">View Recipe</a>
+                    </div>
+                </div>
+            </article>
+            <article class="recipe-card">
+                <div class="card-inner">
+                    <img src="images/lemon-herb-chicken.jpeg" alt="Lemon Herb Chicken">
+                    <div class="card-content">
+                        <h3>Lemon Herb Chicken</h3>
+                    </div>
+                    <div class="card-extra">
+                        <h4>Details</h4>
+                        <p>• Zesty and aromatic, this roast chicken is infused with fresh herbs and citrus for a juicy,
+                            foolproof dinner.</p>
+                        <p>• 1h 20m</p>
+                        <p>• Easy</p>
+                        <a href="recipes/lemon-herb-chicken.html" class="view-btn">View Recipe</a>
+                    </div>
+                </div>
+            </article>
+            <article class="recipe-card">
+                <div class="card-inner">
+                    <img src="images/pan-seared-ribeye.jpeg" alt="Pan-Seared Ribeye">
+                    <div class="card-content">
+                        <h3>Pan-Seared Ribeye</h3>
+                    </div>
+                    <div class="card-extra">
+                        <h4>Details</h4>
+                        <p>• A steakhouse staple delivered in 20 minutes, boasting a perfect butter-basted crust and
+                            tender center.</p>
+                        <p>• 20 mins</p>
+                        <p>• Medium</p>
+                        <a href="recipes/pan-seared-ribeye.html" class="view-btn">View Recipe</a>
+                    </div>
+                </div>
+            </article>
+            <article class="recipe-card">
+                <div class="card-inner">
+                    <img src="images/thai-green-curry.jpeg" alt="Thai Green Curry">
+                    <div class="card-content">
+                        <h3>Thai Green Curry</h3>
+                    </div>
+                    <div class="card-extra">
+                        <h4>Details</h4>
+                        <p>• A fragrant, spicy coconut milk stew bursting with bamboo shoots, fresh basil, and authentic
+                            Thai aromatics.</p>
+                        <p>• 35 mins</p>
+                        <p>• Medium</p>
+                        <a href="recipes/thai-green-curry.html" class="view-btn">View Recipe</a>
+                    </div>
+                </div>
+            </article>
+            <article class="recipe-card">
+                <div class="card-inner">
+                    <img src="images/shakshuka.jpeg" alt="Shakshuka">
+                    <div class="card-content">
+                        <h3>Shakshuka</h3>
+                    </div>
+                    <div class="card-extra">
+                        <h4>Details</h4>
+                        <p>• Perfectly poached eggs nestled in a warm, spiced tomato and bell pepper sauce. Great for
+                            brunch.
+                        </p>
+                        <p>• 25 mins</p>
+                        <p>• Easy</p>
+                        <a href="recipes/shakshuka.html" class="view-btn">View Recipe</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section-about">
+                <h2 class="logo">Recipe Atelier</h2>
+                <p>A curated collection of seasonal flavors and timeless techniques for the modern home kitchen.</p>
+            </div>
+            <div class="footer-section-links">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipes.html">All Recipes</a></li>
+                    <li><a href="contact.html">Get in Touch</a></li>
+                </ul>
+            </div>
+            <div class="footer-section-connect">
+                <h3>Follow the Journey</h3>
+                <p>Share your creations with us on social media.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="Pinterest">Pinterest</a>
+                    <a href="#" aria-label="Youtube">Youtube</a>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="recipe-grid">
-        <div class="recipe-card">
-            <img src="images/salmon-nigiri.jpeg" alt="Salmon Nigiri">
-            <div class="card-content">
-                <h3>Salmon Nigiri</h3>
-            </div>
-            <div class="card-extra">
-                <h4>Details</h4>
-                <p>• A masterclass in precision, featuring delicate slices of fresh salmon over seasoned vinegared rice.
-                </p>
-                <p>• 45 mins</p>
-                <p>• Hard</p>
-                <a href="recipes/salmon-nigiri.html" class="view-btn">View Recipe</a>
-            </div>
-        </div>
-        <div class="recipe-card">
-            <img src="images/caprese-flatbread.jpeg" alt="Caprese Flatbread">
-            <div class="card-content">
-                <h3>Caprese Flatbread</h3>
-            </div>
-            <div class="card-extra">
-                <h4>Details</h4>
-                <p>• A crisp flatbread topped with fresh mozzarella, heirloom tomatoes, and a sweet balsamic glaze.</p>
-                <p>• 15 mins</p>
-                <p>• Easy</p>
-                <a href="recipes/caprese-flatbread.html" class="view-btn">View Recipe</a>
-            </div>
-        </div>
-        <div class="recipe-card">
-            <img src="images/spaghetti-carbonara.jpeg" alt="Spaghetti Carbonara">
-            <div class="card-content">
-                <h3>Spaghetti Carbonara</h3>
-            </div>
-            <div class="card-extra">
-                <h4>Details</h4>
-                <p>• A silky, Roman classic featuring eggs, hard cheese, and crispy guanciale for a rich and comforting
-                    pasta night.</p>
-                <p>• 25 mins</p>
-                <p>• Medium</p>
-                <a href="recipes/spaghetti-carbonara.html" class="view-btn">View Recipe</a>
-            </div>
-        </div>
-        <div class="recipe-card">
-            <img src="images/beef-bourguignon.jpeg" alt="Beef Bourguignon">
-            <div class="card-content">
-                <h3>Beef Bourguignon</h3>
-            </div>
-            <div class="card-extra">
-                <h4>Details</h4>
-                <p>• A sophisticated, slow-cooked French stew with tender beef, red wine, and savory vegetables.</p>
-                <p>• 3h 00m</p>
-                <p>• Hard</p>
-                <a href="recipes/beef-bourguignon.html" class="view-btn">View Recipe</a>
-            </div>
-        </div>
-        <div class="recipe-card">
-            <img src="images/street-style-tacos.jpeg" alt="Street Style Tacos">
-            <div class="card-content">
-                <h3>Street Style Tacos</h3>
-            </div>
-            <div class="card-extra">
-                <h4>Details</h4>
-                <p>• Vibrant and authentic, these bite-sized tacos pack a punch with bold seasonings and fresh toppings.
-                </p>
-                <p>• 30 mins</p>
-                <p>• Medium</p>
-                <a href="recipes/street-style-tacos.html" class="view-btn">View Recipe</a>
-            </div>
-        </div>
-        <div class="recipe-card">
-            <img src="images/quinoa-harvest-bowl.jpeg" alt="Quinoa Harvest Bowl">
-            <div class="card-content">
-                <h3>Quinoa Harvest Bowl</h3>
-            </div>
-            <div class="card-extra">
-                <h4>Details</h4>
-                <p>• A quick, nutrient-dense power lunch loaded with seasonal greens, grains, and a bright vinaigrette.
-                </p>
-                <p>• 15 mins</p>
-                <p>• Easy</p>
-                <a href="recipes/quinoa-harvest-bowl.html" class="view-btn">View Recipe</a>
-            </div>
-        </div>
-
-        <div class="recipe-card">
-            <img src="images/mushroom-risotto.jpeg" alt="Mushroom Risotto">
-            <div class="card-content">
-                <h3>Mushroom Risotto</h3>
-            </div>
-            <div class="card-extra">
-                <h4>Details</h4>
-                <p>• Creamy, decadent arborio rice slow-cooked with earthy wild mushrooms and finished with parmesan.
-                </p>
-                <p>• 40 mins</p>
-                <p>• Hard</p>
-                <a href="recipes/mushroom-risotto.html" class="view-btn">View Recipe</a>
-            </div>
-        </div>
-        <div class="recipe-card">
-            <img src="images/honey-garlic-shrimp.jpeg" alt="Honey Garlic Shrimp">
-            <div class="card-content">
-                <h3>Honey Garlic Shrimp</h3>
-            </div>
-            <div class="card-extra">
-                <h4>Details</h4>
-                <p>• Succulent shrimp tossed in a sweet and savory garlic glaze, served over fluffy jasmine rice.</p>
-                <p>• 15 mins</p>
-                <p>• Easy</p>
-                <a href="recipes/honey-garlic-shrimp.html" class="view-btn">View Recipe</a>
-            </div>
-        </div>
-        <div class="recipe-card">
-            <img src="images/lemon-herb-chicken.jpeg" alt="Lemon Herb Chicken">
-            <div class="card-content">
-                <h3>Lemon Herb Chicken</h3>
-            </div>
-            <div class="card-extra">
-                <h4>Details</h4>
-                <p>• Zesty and aromatic, this roast chicken is infused with fresh herbs and citrus for a juicy,
-                    foolproof dinner.</p>
-                <p>• 1h 20m</p>
-                <p>• Easy</p>
-                <a href="recipes/lemon-herb-chicken.html" class="view-btn">View Recipe</a>
-            </div>
-        </div>
-        <div class="recipe-card">
-            <img src="images/pan-seared-ribeye.jpeg" alt="Pan-Seared Ribeye">
-            <div class="card-content">
-                <h3>Pan-Seared Ribeye</h3>
-            </div>
-            <div class="card-extra">
-                <h4>Details</h4>
-                <p>• A steakhouse staple delivered in 20 minutes, boasting a perfect butter-basted crust and tender
-                    center.</p>
-                <p>• 20 mins</p>
-                <p>• Medium</p>
-                <a href="recipes/pan-seared-ribeye.html" class="view-btn">View Recipe</a>
-            </div>
-        </div>
-        <div class="recipe-card">
-            <img src="images/thai-green-curry.jpeg" alt="Thai Green Curry">
-            <div class="card-content">
-                <h3>Thai Green Curry</h3>
-            </div>
-            <div class="card-extra">
-                <h4>Details</h4>
-                <p>• A fragrant, spicy coconut milk stew bursting with bamboo shoots, fresh basil, and authentic Thai
-                    aromatics.</p>
-                <p>• 35 mins</p>
-                <p>• Medium</p>
-                <a href="recipes/thai-green-curry.html" class="view-btn">View Recipe</a>
-            </div>
-        </div>
-        <div class="recipe-card">
-            <img src="images/shakshuka.jpeg" alt="Shakshuka">
-            <div class="card-content">
-                <h3>Shakshuka</h3>
-            </div>
-            <div class="card-extra">
-                <h4>Details</h4>
-                <p>• Perfectly poached eggs nestled in a warm, spiced tomato and bell pepper sauce. Great for brunch.
-                </p>
-                <p>• 25 mins</p>
-                <p>• Easy</p>
-                <a href="recipes/shakshuka.html" class="view-btn">View Recipe</a>
-            </div>
-        </div>
-    </div>
+    </footer>
 </body>
 
 </html>
