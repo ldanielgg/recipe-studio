@@ -438,6 +438,72 @@ nav a.active {
     color: grey;
 }
 
+/* contact page css styles */
+.contact-container {
+    width: 90%;
+    margin: 40px auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 40px;
+    background-color: #f4efe6;
+}
+
+.contact-container h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* about section */
+.about {
+    margin-bottom: 10px;
+}
+
+.about p {
+    line-height: 1.6;
+}
+
+/* contact form section */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px black;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    height: 90px;
+    resize: none;
+}
+
+.contact-form button {
+    width: 120px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px black;
+    background-color: #f4efe6;
+    cursor: pointer;
+    align-self: center;
+}
+
+.contact-form button:hover {
+    background-color: #d6c7b1;
+}
+
 footer {
     background-color: var(--primary-color);
     color: var(--accent);
@@ -587,6 +653,7 @@ footer {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
