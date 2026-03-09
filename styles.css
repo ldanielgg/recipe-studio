@@ -830,3 +830,17 @@ footer {
         gap: 40px;
     }
 }
+
+@media (max-height: 768px) {
+    .recipe-instruction-step p {
+        font-size: 14px;
+    }
+
+    .extra-details p {
+        font-size: 12px;
+    } 
+
+    .visual-sidebar img {
+        height: 60vh;
+    }
+}
